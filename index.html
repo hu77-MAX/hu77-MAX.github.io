@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>海信模具 · 外协送货导航</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230057B8'/%3E%3Cpath d='M14 20h36v6H14zm0 12h36v6H14zm0 12h24v6H14z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2300A6AA'/%3E%3Cpath d='M14 20h36v6H14zm0 12h36v6H14zm0 12h24v6H14z' fill='%23fff'/%3E%3C/svg%3E">
 <style>
 :root{
-  --brand:#0057B8; --brand-dark:#0E2A47; --bg:#F2F6FB; --card:#FFFFFF;
+  --brand:#00A6AA; --brand-dark:#00A6AA; --bg:#F2F6FB; --card:#FFFFFF;
   --ink:#1A2733; --sub:#5A6B7A; --line:#E1E9F2;
-  --a:#0057B8; --b:#1B8A5A; --c:#D9760A;
+  --a:#00A6AA; --b:#1B8A5A; --c:#D9760A;
   --red:#D22F2F; --green:#2E9E4F;
   --radius:14px;
 }
@@ -19,7 +19,7 @@ body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,-apple
 .wrap{max-width:720px;margin:0 auto;padding:0 14px 40px}
 button{font-family:inherit;border:none;background:none;cursor:pointer;color:inherit}
 /* ===== 顶栏 ===== */
-header{background:linear-gradient(135deg,#0057B8 0%,#0E4C96 55%,#0E2A47 100%);color:#fff;padding:18px 16px 16px;border-radius:0 0 22px 22px}
+header{background:linear-gradient(135deg,#00A6AA 0%,#00A6AA 55%,#00A6AA 100%);color:#fff;padding:18px 16px 16px;border-radius:0 0 22px 22px}
 .head-top{max-width:720px;margin:0 auto;display:flex;align-items:center;gap:12px}
 .badge{flex:none;width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.14);display:flex;align-items:center;justify-content:center}
 .head-top h1{font-size:20px;font-weight:700;letter-spacing:.5px}
@@ -37,7 +37,7 @@ header{background:linear-gradient(135deg,#0057B8 0%,#0E4C96 55%,#0E2A47 100%);co
 .goods-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
 .goods-btn{border:1.5px solid var(--line);border-radius:12px;padding:10px 8px;text-align:center;font-size:14px;font-weight:600;color:var(--ink);transition:all .15s;min-height:48px;display:flex;align-items:center;justify-content:center}
 .goods-btn small{display:block;font-weight:400;color:var(--sub);font-size:11px;margin-top:2px}
-.goods-btn.active{color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(0,87,184,.25)}
+.goods-btn.active{color:#fff;border-color:transparent;box-shadow:0 4px 12px rgba(0,166,170,.25)}
 .goods-btn[data-g="steel"].active{background:var(--a)}
 .goods-btn[data-g="std"].active{background:var(--b)}
 .goods-btn[data-g="custom"].active{background:var(--c)}
@@ -65,7 +65,7 @@ header{background:linear-gradient(135deg,#0057B8 0%,#0E4C96 55%,#0E2A47 100%);co
 .pin.p-gate{background:var(--red);width:38px;height:38px;font-size:0}
 .pin.p-gate::after{content:"";position:absolute;width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-top:10px solid #fff;bottom:-4px}
 .pin.hl{outline:3px solid rgba(210,47,47,.7);outline-offset:2px}
-.pin-label{position:absolute;transform:translateX(-50%);top:38px;left:50%;background:rgba(14,42,71,.85);color:#fff;font-size:11px;white-space:nowrap;padding:2px 7px;border-radius:6px;letter-spacing:.5px}
+.pin-label{position:absolute;transform:translateX(-50%);top:38px;left:50%;background:rgba(0,166,170,.85);color:#fff;font-size:11px;white-space:nowrap;padding:2px 7px;border-radius:6px;letter-spacing:.5px}
 .map-tip{display:flex;align-items:center;justify-content:center;gap:6px;margin-top:8px;font-size:12px;color:var(--sub)}
 .map-tip .tap{color:var(--brand);font-weight:600}
 .zoom-btn{position:absolute;right:8px;bottom:8px;width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(0,0,0,.25);display:flex;align-items:center;justify-content:center;z-index:5}
@@ -76,7 +76,7 @@ header{background:linear-gradient(135deg,#0057B8 0%,#0E4C96 55%,#0E2A47 100%);co
 .lightbox .lb-close{margin-top:16px;color:#fff;border:1px solid rgba(255,255,255,.5);border-radius:10px;padding:8px 26px;font-size:14px}
 /* ===== 收货点卡片 ===== */
 .point-card{border:1.5px solid var(--line);border-radius:14px;padding:14px;margin-top:12px;background:#fff;transition:border-color .2s,box-shadow .2s}
-.point-card.hl{border-color:var(--brand);box-shadow:0 0 0 3px rgba(0,87,184,.15)}
+.point-card.hl{border-color:var(--brand);box-shadow:0 0 0 3px rgba(0,166,170,.15)}
 .pc-top{display:flex;align-items:center;gap:10px}
 .pc-badge{flex:none;width:42px;height:42px;border-radius:11px;color:#fff;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:800}
 .pc-title{flex:1;min-width:0}
@@ -87,11 +87,11 @@ header{background:linear-gradient(135deg,#0057B8 0%,#0E4C96 55%,#0E2A47 100%);co
 .contact-row .cname{font-weight:600;min-width:56px}
 .contact-row .cphone{color:var(--sub);font-size:13px;flex:1}
 .icon-btn{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:4px;border-radius:9px;padding:6px 10px;font-size:12px;font-weight:600;min-height:34px}
-.icon-btn.call{background:#EAF3FB;color:var(--brand)}
+.icon-btn.call{background:#E6F7F7;color:var(--brand)}
 .icon-btn.nav{background:var(--brand);color:#fff}
 .pc-actions{display:flex;gap:8px;margin-top:12px}
 .pc-actions .big{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:11px;padding:11px 8px;font-size:14px;font-weight:700;min-height:46px}
-.pc-actions .big.nav{background:var(--brand);color:#fff;box-shadow:0 3px 10px rgba(0,87,184,.28)}
+.pc-actions .big.nav{background:var(--brand);color:#fff;box-shadow:0 3px 10px rgba(0,166,170,.28)}
 .pc-actions .big.call{background:#FDEBEA;color:#C62828}
 .pc-actions .big.alt{background:#F1F5F9;color:var(--brand-dark);border:1px solid var(--line)}
 .point-card[data-p="A"] .pc-badge{background:var(--a)}
@@ -183,11 +183,11 @@ footer .hl{color:var(--brand);font-weight:600}
       <button class="pin p-a" style="left:43.3%;top:64.9%" data-p="A">A</button>
       <button class="pin p-b" style="left:51.7%;top:48.1%" data-p="B">B</button>
       <button class="zoom-btn" id="zoomBtn" title="查看大图">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0E2A47" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A6AA" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
       </button>
     </div>
     <div class="map-tip">
-      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#0057B8" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#00A6AA" stroke-width="2.2" stroke-linecap="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
       <span><span class="tap">点击 A / B / C 标记</span> 查看对应收货点，点图可放大</span>
     </div>
   </section>
@@ -263,16 +263,6 @@ footer .hl{color:var(--brand);font-weight:600}
     <div class="route-row">
       <div class="route-item pref"><b><i class="dot red"></i>优选路线</b><p>日常推荐路线，红箭头标示</p></div>
       <div class="route-item alt"><b><i class="dot green"></i>备用路线</b><p>拥堵时绕行，绿箭头标示</p></div>
-    </div>
-    <div class="pc-actions" style="margin-top:12px">
-      <a class="big nav" href="https://uri.amap.com/navigation?to=120.271960,36.258009,海信模具西门&mode=car&policy=1" target="_blank" rel="noopener">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
-        一键导航到西门
-      </a>
-      <a class="big call" href="tel:053286683489">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.13.96.36 1.9.7 2.8a2 2 0 0 1-.45 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.45c.9.34 1.84.57 2.8.7A2 2 0 0 1 22 16.9z"/></svg>
-        厂区总机
-      </a>
     </div>
   </section>
 
